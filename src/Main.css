@@ -15,6 +15,7 @@
 }
 body{
     font-family: 'Metropolis', sans-serif;
+    font-size: 1.5rem;
     background-image: url( "background.webp" );
     background-color: rgb(2, 24, 53);
     background-size: cover;
@@ -35,6 +36,29 @@ body{
 }
 nav {
     height: 10vh;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+button {
+    background-color: darkblue; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: blue;
+}
+.counter{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    justify-content: space-between;
 }
 .content{
     display: flex;
@@ -42,6 +66,7 @@ nav {
     padding-left: 2rem;
     padding-right: 2rem;
     height: 90vh;
+    min-width: 20rem;
 }
 .mc{
     position: relative;

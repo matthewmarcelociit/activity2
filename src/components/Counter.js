@@ -10,9 +10,11 @@ function Counter() {
     return (
         <div class="content">
             <h1>Counter</h1>
-            <h1>{count}</h1>
-            <button onClick={() => setCount(prev => prev - 1)}>Decrement</button>
-            <button onClick={() => setCount(prev => prev + 1)}>Increment</button>
+            <div class="counter">
+                <button onClick={() => setCount(prev => prev - 1)}>-</button>
+                <h1>{count}</h1>
+                <button onClick={() => setCount(prev => prev + 1)}>+</button>
+            </div>
             <button onClick={() => setCount(0)}>Reset</button>
         </div>
     );
