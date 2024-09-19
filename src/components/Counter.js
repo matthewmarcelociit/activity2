@@ -8,7 +8,7 @@ function Counter() {
     }, [count]);
 
     return (
-        <div>
+        <div class="content">
             <h1>Counter</h1>
             <h1>{count}</h1>
             <button onClick={() => setCount(prev => prev - 1)}>Decrement</button>

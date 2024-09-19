@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes, Outlet } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { Link } from "react-router-dom";
-import './App.css';
+import './Main.css';
+import Navigate from './components/Navigate';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -66,13 +67,16 @@ function App() {
       //   </Routes>
       // </Router>
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/counter" element={<Counter />} />
-        <Route path="*" element={<NotFound />} />   
-      </Routes>
+      <div id="bodyDiv">
+        <Navigate />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="*" element={<NotFound />} />   
+        </Routes>
+      </div>
     </Router>
   );
 }
