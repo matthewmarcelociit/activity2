@@ -10,6 +10,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 import NotFound from './components/NotFound';
 import Counter from './components/Counter';
+import BSNavbar from './components/BSNavbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import ControlledInput from './ControlledInput';
 // import Counter from './Counter';
 // import Event from './Event';
@@ -67,8 +69,8 @@ function App() {
       //   </Routes>
       // </Router>
     <Router>
+      <BSNavbar />
       <div id="bodyDiv">
-        <Navigate />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

@@ -14,18 +14,19 @@
     src: url(./fonts/Metropolis-ExtraBold-800.woff2);
 }
 body{
-    font-family: 'Metropolis', sans-serif;
+    font-family: 'Metropolis', sans-serif !important;
     font-size: 1.5rem;
     background-image: url( "background.webp" );
     background-color: rgb(2, 24, 53);
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: white !important;
     display: flex;
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    width: 100vw;
 }
 #bodyDiv{
     display: flex;
@@ -35,7 +36,6 @@ body{
     height: 100vh;
 }
 nav {
-    height: 10vh;
     display: flex;
     gap: 1rem;
     padding: 1rem;
